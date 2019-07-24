@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>SS2014 Program</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/program.css">
+	
+	<!--[if !IE]><!-->
+	<style>
+	
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+			text-align: center;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/lef  <tr><thead colspan="5">SS2014 Program</thead></tr>
+t values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: "Time"; }
+		td:nth-of-type(2):before { content: "Lecturer"; }
+		td:nth-of-type(3):before { content: "Title"; }
+	}
+	
+	/* Smartphones (portrait and landscape) ----- #e3e0d9; #e3e0d9;------ */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+	
+	</style>
+	<!--<![endif]-->
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+<!--
+	<h1 align="center" bgcolor="e3e0d9">SS2014 Program</h1>
+-->  
+
+<table>
+  <thead bgcolor="#f9a512"><font size="+3">April 2, Wednesday</font></thead>
+  <tbody>
+  <tr>
+     <th align=center>Time</th>
+     <th>Lecturer</th>
+     <th>Title</th>
+  </tr>
+  <tr><td colspan="3" bgcolor="#f9a512"><font color="white">Chair</font></td></tr>  
+  <tr><td>13:30 PM -14:50 PM</td><td>Mészáros</td><td>Gamma Ray Bursts, and connections to Cosmology, Ultra-high Energy Cosmic Rays and Neutrinos (I)</td></tr>
+  <tr><td>15:10 PM -16:30 PM</td><td>Antusch</td><td>Neutrinos and Physics Beyond the Standard Model (I)</td></tr>
+  </tbody>
+</table>
+<p>
+<table>
+  <thead bgcolor="#f9a512"><font size="+3">April 3, Thursday</font></thead>
+  <tbody>
+  <tr>
+     <th align=center>Time</th>
+     <th>Lecturer</th>
+     <th>Title</th>
+  </tr>
+  <tr><td colspan="3" bgcolor="#f9a512"><font color="white">Chair</font></td></tr>  
+  <tr><td>09:00 AM -10:20 AM</td><td>Harada</td><td>Hadron phenomenology based on holographic QCD models (I)</td></tr>
+  <tr><td>10:40 AM -12:00 PM</td><td>Mészáros</td><td>Gamma Ray Bursts, and connections to Cosmology, Ultra-high Energy Cosmic Rays and Neutrinos (II)</td></tr>
+
+  <tr><td colspan="3" bgcolor="#f9a512"><font color="white">Chair</font></td></tr>  
+  <tr><td>13:30 PM -14:50 PM</td><td>Mészáros</td><td>Gamma Ray Bursts, and connections to Cosmology, Ultra-high Energy Cosmic Rays and Neutrinos (III)</td></tr>
+  <tr><td>15:10 PM -16:30 PM</td><td>Antusch</td><td>Neutrinos and Physics Beyond the Standard Model (II)</td></tr>
+  </tbody>
+</table>
+<p>
+<table>
+  <thead bgcolor="#f9a512"><font size="+3">April 4, Friday</font></thead>
+  <tbody>
+  <tr>
+     <th align=center>Time</th>
+     <th>Lecturer</th>
+     <th>Title</th>
+  </tr>
+  <tr><td colspan="3" bgcolor="#f9a512"><font color="white">Chair</font></td></tr>  
+  <tr><td>09:00 AM -10:20 AM</td><td>Antusch</td><td>Neutrinos and Physics Beyond the Standard Model (III)</td></tr>
+  <tr><td>10:40 AM -12:00 PM</td><td>Hsu</td><td>LHC Physics (I)</td></tr>
+
+  <tr><td colspan="3" bgcolor="#f9a512"><font color="white">Chair</font></td></tr>  
+  <tr><td>13:30 PM -14:50 PM</td><td>Hadara</td><td>Hadron phenomenology based on holographic QCD models (II)</td></tr>
+  <tr><td>15:10 PM -16:30 PM</td><td>Hsu</td><td>LHC Physics (II)</td></tr>
+  </tbody>
+</table>
+<p>
+<table>
+  <thead bgcolor="#f9a512"><font size="+3">April 5, Saturday</font></thead>
+  <tbody>
+  <tr>
+     <th align=center>Time</th>
+     <th>Lecturer</th>
+     <th>Title</th>
+  </tr>
+  <tr><td colspan="3" bgcolor="#f9a512"><font color="white">Chair</font></td></tr>  
+  <tr><td>09:00 AM -10:20 AM</td><td>Hadara</td><td>Hadron phenomenology based on holographic QCD models (III)</td></tr>
+  <tr><td>10:40 AM -12:00 PM</td><td>Hsu</td><td>LHC Physics (III)</td></tr>
+  </tbody>
+</table>
+
+
+</div>
+		
+</body>
+
+</html>

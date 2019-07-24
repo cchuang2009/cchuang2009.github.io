@@ -1,0 +1,36 @@
+.main {
+	float: left;
+    width: 65.8227848%; /* 624/948 */
+}
+
+.slats li {
+    float: left;
+	margin-right: 2.5316456%; /* 24px / 948px */
+	width: 31.6455696%; /* 300/948 */
+}
+.slats li:last-child {
+    margin-right: 0;
+}
+aside{
+	display: block;
+	margin-bottom: 1em;
+	padding: 0 1%;
+    float: right;
+    width: 31.6455696%; /* 300/948 */
+}
+nav[role="navigation"] li {
+    float: left;
+	border-top: 0;
+}
+nav[role="navigation"] a {
+	float: left;
+}
+footer[role="contentinfo"] .top {
+	float: right;
+}
+aside img{
+	max-width: 100%;
+}
+aside{
+	border-radius: 5p
+}
